@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+ 
+  <hr>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Burger's Out</title>
+</head>
+<body>
+  <div class="atas"> 
+    <h1>BILLING SYSTEM BURGER'S OUT</h1>
+  </div>
+
+    <hr>
+    
+    
+    <section id='body'> 
+      <form >
+        
+          <h4>We believe in diversity of flavors <br>
+          Now Have It Your Way!</h4>
+        <div id='data'></div>
+        <label for="name">Name:</label>
+        <input onchange="namaUser()" type="text" id="fname" placeholder="Masukkan nama anda"
+        name="name" >
+      </div>
+      
+      <div id='takeawayornot'>
+        <span>Take Home Or Dine In?</span>
+        <input onclick="dineTakeAway()"  type="radio"name="makan" value="DineIn">
+        <label for="yes">Dine In</label>
+        <input onclick="dineTakeAway()"  type="radio" name="makan" value="TakeAway">
+          <label for="no">Take Home</label>
+      </div>
+       <div class='proteins'>
+         <label for="Proteins">What do you prefer most?</label>
+           <select  id="lunch" onchange="cariProtein()">
+             <option value="" selected='selected'>silahkah pilih protein </option>
+              <option value="14000" id="beef" >beef Rp 14000</option>
+              <option value="16000"  id="chickfillet">ChickenFillet Rp 16000</option>
+              <option value="13000" id="VeganPatty" >VeganPatty Rp 13000</option>
+            </select>
+       </div>
+            <br>
+          <div class="toppings">
+            <span>What toppings would you like? (Rp 3000 Each)</span>
+            <br>
+            <input 
+            type="checkbox"
+             name="topping" 
+             id="lettuce" 
+             value="3000"
+             onclick="toppingBurger()">
+            <label for="lettuce">Lettuce</label>
+            <input
+             type="checkbox" 
+             name="topping" 
+             id="tomato" 
+             value="3000"
+             onclick="toppingBurger()">
+            <label for="tomato">Tomato</label>
+            <input 
+            type="checkbox" 
+            name="topping" 
+            id="onion" 
+            value="3000"
+            onclick="toppingBurger()">
+            <label for="onion">Caramelized Onion</label>
+            <input
+             type="checkbox" 
+             name="topping" 
+             id="bacon" 
+             value="3000"
+             onclick="toppingBurger()">
+            <label for="bacon">Bacon</label>
+          </div>
+          <div class="Cheeses">
+            <span>What Cheeses would you like?</span>
+            <br>
+            <input 
+            type="checkbox"
+             name="Cheeses" 
+             id="americanCheese"
+              value="5000"
+              onclick="cheesed()">
+            <label for="americanCheese">American Cheese</label>
+            <input
+             type="checkbox" 
+             name="Cheeses" 
+             id="sharpCheddar"
+              value="5000"
+              onclick="cheesed()">
+            <label for="sharpCheddar">Sharp Cheddar</label>
+            <input 
+            type="checkbox" 
+            name="Cheeses" 
+            id="blueCheese" 
+            value="5000"
+            onclick="cheesed()">
+            <label for="blueCheese">blue cheese</label>
+          </div>
+          <div class = fries>
+          <span>would you like extra french fries? Rp 8000 ++ </span>
+            <br>
+            <input 
+            type="checkbox" 
+            name="fries" 
+            value="8000"
+            onclick="frenchFries()">
+            <label for="yes">i want fries</label>
+            <input 
+            type="checkbox" 
+            name="fries" 
+            value="0"
+            onclick="frenchFries()">
+              <label for="no">nope too much!</label>
+            </div>
+            
+            <div class = 'Total'>
+              <button onclick="alertBox()" id='submitButton' > totalPrice </button>  
+                 <p  id="total" value='' >
+                   </p>
+                   
+            </input>  
+            </div>
+            
+          </form>  
+    </section>
+   
+</section>
+<script src="./index.js" ></script>
+</body>
+</html>

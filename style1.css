@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    align-items: center;
+    background: #D8AA96;
+    color: #35251f;
+    display: grid;
+    font-family: sans serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100px;
+    justify-items: center;
+    background-image: url("./ImgBank/hand-drawn-burger-sunglasses-seamless-pattern_7130-1519.png");
+
+
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+form {
+    border-style: solid;
+    
+    background: rgb(253, 170, 102);
+    display: grid;
+    grid-template-areas: "." ".";
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+} 
+.atas {background: rgb(253, 170, 102);
+    border-style: solid;
+    display: grid;
+    grid-template-areas: "." ".";
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px;
+
+}
+h1 {
+    color: rgb(29, 28, 28);
+    display: inline-block;
+    font-size: 50px;
+    font-family: serif;
+    padding: 40px
+}
+
+.container left {background: yellow;
+    overflow: hidden;
+    padding: 40px 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 50%px;
+    align-items:center;
+    float: left;
+}
+
+button {
+    border: none;
+    border-radius: 10%;
+    height: 28px;
+    margin-right: 10px;
+    outline: none;
+    width: 80px;
+    text-align: center;
+}
